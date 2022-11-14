@@ -2,13 +2,13 @@ import {
   createRouter,
   createWebHistory,
 } from "vue-router";
-import { Login } from "../pages";
+import { Hello } from "../pages";
 
 let loginPage = {
   path: "/",
   name: "login",
   title: "登录",
-  component: Login,
+  component: Hello,
 };
 
 const router = createRouter({

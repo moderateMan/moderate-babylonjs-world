@@ -1,4 +1,4 @@
-import { http } from "@/common/http";
+import { http } from "@/http";
 
 interface loginParamsT {
   name: string;
