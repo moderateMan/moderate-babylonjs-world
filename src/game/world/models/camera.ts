@@ -44,7 +44,7 @@ export class GameCamera {
         this.moveValue.y += this.eachJumpY;
       } else {
         // 跳跃结束，开始下落
-        // this.isJumpFall = true;
+        this.isJumpFall = true;
       }
     }
     this.camera.cameraDirection.copyFromFloats(
