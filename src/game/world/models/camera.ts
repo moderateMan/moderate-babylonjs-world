@@ -111,7 +111,9 @@ export class GameCamera {
   }
 
   public moveDown(): void {
-    this.moveValue.y -= 0.1;
+    if(!this.isJumpStart) {
+      this.moveValue.y -= 0.1;
+    }
   }
 
   public getCurrentPosition(): { x: number; y: number; z: number } {
